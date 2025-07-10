@@ -3,103 +3,130 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bossed Up Simulations</title>
+    <title>Bossed Up Simulations - The Surge</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #1a1a2e, #16213e, #0f3460);
-            color: white;
+            font-family: 'Arial', sans-serif;
+            background-color: #0d0d0d;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .banner {
+            background: linear-gradient(to right, red, blue, purple);
+            padding: 30px;
             text-align: center;
-            padding: 40px;
         }
-        h1 {
-            font-size: 3em;
-            color: #ff4c60;
+
+        .banner img {
+            max-width: 120px;
+            border-radius: 50%;
+            box-shadow: 0 0 15px rgba(0,0,0,0.5);
         }
-        .tagline {
-            font-size: 1.5em;
-            margin-bottom: 20px;
-            color: #6c63ff;
+
+        .banner h1 {
+            margin: 10px 0 5px;
+            font-size: 2.5em;
         }
-        .tip-banner {
-            max-width: 100%;
-            margin: 20px 0;
-            border-radius: 12px;
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
-        }
-        .wallet {
-            background: #0f3460;
-            padding: 15px;
-            margin: 10px auto;
-            width: 80%;
-            border-radius: 10px;
-            word-wrap: break-word;
-        }
-        .links a {
-            color: #ffd369;
+
+        .banner p {
             font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .wallets, .socials, .qr-section {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .wallets h2, .socials h2, .qr-section h2 {
+            color: #f0f0f0;
+            margin-bottom: 10px;
+        }
+
+        .wallets p, .socials a {
+            color: #ccc;
+            margin: 5px 0;
+        }
+
+        .socials a {
             display: block;
-            margin: 10px 0;
+            color: #33ccff;
             text-decoration: none;
         }
-        .email-signup, .merch-section {
-            margin: 40px auto;
-            width: 80%;
-            background: #16213e;
-            padding: 20px;
+
+        .qr-section div {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .qr-section img {
+            width: 150px;
+            border: 2px solid #555;
             border-radius: 10px;
         }
-        input[type=email] {
-            padding: 10px;
-            width: 70%;
-            border-radius: 5px;
-            border: none;
-        }
-        input[type=submit] {
-            padding: 10px 20px;
-            border-radius: 5px;
-            background-color: #6c63ff;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
+
         footer {
-            margin-top: 40px;
+            text-align: center;
+            padding: 20px;
+            color: #888;
             font-size: 0.9em;
-            color: #aaa;
+            background-color: #111;
         }
     </style>
 </head>
 <body>
-    <h1>Bossed Up Simulations</h1>
-    <div class="tagline">Support Independent Content</div>
-    <img src="brave_banner.png" alt="Tip with BAT on Brave" class="tip-banner">
 
-    <div class="wallet"><strong>BAT / Brave Tip Wallet:</strong> 0x8e281d590229ef6f2b1264e9d3c543595c18b47c</div>
-    <div class="wallet"><strong>Uphold Wallet (ETH):</strong> 0x5D7B0F6Ce7e25dE8932a698E02842aCe8d02ce0D</div>
+<div class="banner">
+    <img src="brave_banner.png" alt="The Surge Logo">
+    <h1>The Surge</h1>
+    <p>Support Independent Content</p>
+</div>
 
-    <div class="links">
-        <a href="https://youtube.com/@thesurgebossupsimulations?si=b2utwXfHlMEazqVY" target="_blank">🎬 Main YouTube Channel</a>
-        <a href="https://youtube.com/@thesurgebossedupshorts?si=yMg4y6_enQvBx0re" target="_blank">📺 Shorts Channel</a>
-        <a href="https://www.tiktok.com/@fix4ii?is_from_webapp=1&sender_device=pc" target="_blank">🎵 TikTok Profile</a>
-        <a href="https://discord.gg/QjTa6dXKcy" target="_blank">💬 Join Our Discord</a>
+<div class="wallets">
+    <h2>Support with Crypto</h2>
+    <p><strong>BTC:</strong> 0x8e281d590229ef6f2b1264e9d3c543595c18b47c</p>
+    <p><strong>ETH:</strong> 0x5D7B0F6Ce7e25dE8932a698E02842aCe8d02ce0D</p>
+    <p><strong>SOL:</strong> 0x8e281d590229ef6f2b1264e9d3c543595c18b47c</p>
+    <p><strong>BAT:</strong> 0x8e281d590229ef6f2b1264e9d3c543595c18b47c</p>
+</div>
+
+<div class="socials">
+    <h2>Follow Us</h2>
+    <a href="https://youtube.com/@thesurgebossupsimulations?si=b2utwXfHlMEazqVY" target="_blank">YouTube (Main)</a>
+    <a href="https://youtube.com/@thesurgebossedupshorts?si=yMg4y6_enQvBx0re" target="_blank">YouTube Shorts</a>
+    <a href="https://www.tiktok.com/@fix4ii?is_from_webapp=1&sender_device=pc" target="_blank">TikTok</a>
+</div>
+
+<div class="qr-section">
+    <h2>Scan to Visit Our Channels</h2>
+    <div>
+        <div>
+            <img src="QR_Landing_Page.png" alt="Landing Page QR">
+            <p>Landing Page</p>
+        </div>
+        <div>
+            <img src="QR_YouTube_Main.png" alt="YouTube Main QR">
+            <p>YouTube Main</p>
+        </div>
+        <div>
+            <img src="QR_YouTube_Shorts.png" alt="YouTube Shorts QR">
+            <p>YouTube Shorts</p>
+        </div>
+        <div>
+            <img src="QR_TikTok.png" alt="TikTok QR">
+            <p>TikTok</p>
+        </div>
     </div>
+</div>
 
-    <div class="email-signup">
-        <h2>📬 Stay In The Loop</h2>
-        <form action="https://your-mailchimp-form-endpoint" method="POST" target="_blank">
-            <input type="email" name="EMAIL" placeholder="Enter your email" required>
-            <input type="submit" value="Subscribe">
-        </form>
-        <p style="font-size: 0.8em;">Powered by Mailchimp</p>
-    </div>
+<footer>
+    &copy; 2025 Bossed Up Simulations. All rights reserved.
+</footer>
 
-    <div class="merch-section">
-        <h2>🛍️ Shop Bossed Up Merch</h2>
-        <p>Official merchandise coming soon. Stay tuned for exclusive drops and supporter rewards!</p>
-    </div>
-
-    <footer>Built by The Surge | Hosted on GitHub Pages</footer>
 </body>
 </html>
