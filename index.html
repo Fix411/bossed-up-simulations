@@ -1,65 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Bossed Up Simulations</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f2f2f2;
       display: flex;
+      background: #f4f4f4;
     }
     .sidebar {
-      width: 320px;
-      background-color: #ffffff;
+      width: 300px;
+      background: #fff;
       padding: 20px;
       box-shadow: 2px 0 5px rgba(0,0,0,0.1);
       height: 100vh;
       overflow-y: auto;
     }
-    .main-content {
-      flex-grow: 1;
-      padding: 40px;
-    }
     .referral-card {
-      background: #f9f9f9;
-      border-radius: 12px;
-      padding: 15px;
+      background: #fafafa;
+      border-radius: 10px;
+      padding: 12px;
       margin-bottom: 20px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
       text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
     .referral-card img {
-      width: 100%;
-      height: auto;
+      max-width: 100%;
       border-radius: 8px;
     }
     .referral-card h3 {
-      margin-top: 10px;
-      font-size: 18px;
-    }
-    .referral-card p {
-      font-size: 14px;
-      margin: 5px 0;
+      margin: 10px 0 5px;
     }
     .referral-card a {
-      text-decoration: none;
-      background-color: #1a73e8;
-      color: white;
-      padding: 8px 16px;
-      border-radius: 6px;
       display: inline-block;
       margin-top: 10px;
+      background: #1a73e8;
+      color: #fff;
+      padding: 8px 16px;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+    .main-content {
+      flex-grow: 1;
+      padding: 30px;
+    }
+    header img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+    .qr-section, .mailchimp, .nft-gallery {
+      margin-bottom: 40px;
+    }
+    .qr-section img {
+      width: 100px;
+      margin-right: 10px;
     }
   </style>
 </head>
 <body>
   <div class="sidebar">
     <div class="referral-card">
-      <img src="A_2D_digital_graphic_displays_six_referral_cards_f.png" alt="FreeBitco.in">
+      <img src="A_2D_digital_graphic_displays_six_referral_cards_f.png" alt="Referral Graphic" />
       <h3>FreeBitco.in</h3>
       <p>Collect every hour</p>
       <a href="https://freebitco.in/?r=11501929" target="_blank">Join & Earn</a>
@@ -81,7 +88,7 @@
     </div>
     <div class="referral-card">
       <h3>FireFaucet</h3>
-      <p>Collect in many ways</p>
+      <p>Multiple earning options</p>
       <a href="https://firefaucet.win/ref/Fix411" target="_blank">Join & Earn</a>
     </div>
     <div class="referral-card">
@@ -91,8 +98,28 @@
     </div>
   </div>
   <div class="main-content">
-    <h1>Welcome to Bossed Up Simulations</h1>
-    <p>Your hub for NFT drops, crypto tips, and simulation game strategy. Use the referral links on the left to start stacking crypto for free!</p>
+    <header>
+      <img src="Banner.png" alt="Bossed Up Banner"/>
+    </header>
+    <section class="qr-section">
+      <h2>Crypto Donations</h2>
+      <p>Support The Surge - Scan to donate:</p>
+      <img src="btc_qr.png" alt="BTC" />
+      <img src="eth_qr.png" alt="ETH" />
+      <img src="sol_qr.png" alt="SOL" />
+      <img src="bat_qr.png" alt="BAT" />
+      <img src="free_qr.png" alt="Free Wallet" />
+    </section>
+    <section class="nft-gallery">
+      <h2>NFT Gallery: Da Big Fella</h2>
+      <a href="https://opensea.io/gallery/0x4d7aeb7f7831f1f65112f616206fb56b9caad6f3/551832eb5a3a4cae9084cdff392a4002" target="_blank">
+        View on OpenSea
+      </a>
+    </section>
+    <section class="mailchimp">
+      <h2>Subscribe for Updates</h2>
+      <iframe src="https://thesurge.us17.list-manage.com/subscribe/post?u=e931729b8c78f77fb0a04410c&amp;id=e66a1388e3" width="100%" height="200"></iframe>
+    </section>
   </div>
 </body>
 </html>
