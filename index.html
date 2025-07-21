@@ -33,30 +33,32 @@
       font-size: 1.2rem;
       font-weight: bold;
     }
-    .button {
+    .icon-grid {
       display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
       align-items: center;
       justify-content: center;
-      width: 80%;
-      max-width: 320px;
-      margin: 0.5rem auto;
-      padding: 1rem;
-      background-color: rgba(255, 255, 255, 0.1);
-      border: 2px solid white;
-      border-radius: 10px;
-      text-decoration: none;
-      color: white;
-      font-size: 1.1rem;
-      transition: all 0.2s ease;
+      margin-top: 2rem;
     }
-    .button img {
-      width: 28px;
-      height: 28px;
-      margin-right: 10px;
-      vertical-align: middle;
+    .icon-button {
+      display: inline-block;
+      width: 80px;
+      height: 80px;
+      border-radius: 20px;
+      overflow: hidden;
+      border: 3px solid white;
+      transition: transform 0.2s, box-shadow 0.2s;
     }
-    .button:hover {
-      background-color: rgba(255, 255, 255, 0.3);
+    .icon-button:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 15px white;
+    }
+    .icon-button img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
     }
     .section {
       margin: 3rem 1rem;
@@ -83,21 +85,21 @@
     <p>Support Independent Content</p>
   </header>
 
-  <div class="section">
-    <a class="button" href="https://youtube.com/@thesurgebossupsimulations?si=b2utwXfHlMEazqVY" target="_blank">
-      <img src="assets/youtube.png" alt="YouTube"/>YouTube: Bossed Up Simulations
+  <div class="icon-grid">
+    <a class="icon-button" href="https://youtube.com/@thesurgebossupsimulations?si=b2utwXfHlMEazqVY" target="_blank">
+      <img src="assets/youtube.png" alt="YouTube"/>
     </a>
-    <a class="button" href="https://youtube.com/@thesurgebossedupshorts?si=yMg4y6_enQvBx0re" target="_blank">
-      <img src="assets/youtube_shorts.png" alt="YouTube Shorts"/>Shorts Channel
+    <a class="icon-button" href="https://youtube.com/@thesurgebossedupshorts?si=yMg4y6_enQvBx0re" target="_blank">
+      <img src="assets/youtube_shorts.png" alt="YouTube Shorts"/>
     </a>
-    <a class="button" href="https://www.tiktok.com/@fix4ii?is_from_webapp=1&sender_device=pc" target="_blank">
-      <img src="assets/tiktok.png" alt="TikTok"/>TikTok
+    <a class="icon-button" href="https://www.tiktok.com/@fix4ii?is_from_webapp=1&sender_device=pc" target="_blank">
+      <img src="assets/tiktok.png" alt="TikTok"/>
     </a>
-    <a class="button" href="https://discord.gg/QjTa6dXKcy" target="_blank">
-      <img src="assets/discord.png" alt="Discord"/>Join Our Discord
+    <a class="icon-button" href="https://discord.gg/QjTa6dXKcy" target="_blank">
+      <img src="assets/discord.png" alt="Discord"/>
     </a>
-    <a class="button" href="https://twitch.tv/fixx411" target="_blank">
-      <img src="assets/twitch.png" alt="Twitch"/>Twitch: fixx411
+    <a class="icon-button" href="https://twitch.tv/fixx411" target="_blank">
+      <img src="assets/twitch.png" alt="Twitch"/>
     </a>
   </div>
 
