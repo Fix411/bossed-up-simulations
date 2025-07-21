@@ -35,20 +35,19 @@
     }
     .icon-grid {
       display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
-      align-items: center;
+      flex-wrap: wrap;
       justify-content: center;
-      margin-top: 2rem;
+      gap: 1.2rem;
+      padding: 1.5rem 0;
     }
     .icon-button {
-      display: inline-block;
       width: 80px;
       height: 80px;
       border-radius: 20px;
       overflow: hidden;
       border: 3px solid white;
       transition: transform 0.2s, box-shadow 0.2s;
+      display: inline-block;
     }
     .icon-button:hover {
       transform: scale(1.1);
