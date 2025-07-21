@@ -34,9 +34,11 @@
       font-weight: bold;
     }
     .button {
-      display: block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       width: 80%;
-      max-width: 300px;
+      max-width: 320px;
       margin: 0.5rem auto;
       padding: 1rem;
       background-color: rgba(255, 255, 255, 0.1);
@@ -46,6 +48,12 @@
       color: white;
       font-size: 1.1rem;
       transition: all 0.2s ease;
+    }
+    .button img {
+      width: 28px;
+      height: 28px;
+      margin-right: 10px;
+      vertical-align: middle;
     }
     .button:hover {
       background-color: rgba(255, 255, 255, 0.3);
@@ -76,11 +84,21 @@
   </header>
 
   <div class="section">
-    <a class="button" href="https://youtube.com/@thesurgebossupsimulations?si=b2utwXfHlMEazqVY" target="_blank">🎮 YouTube: Bossed Up Simulations</a>
-    <a class="button" href="https://youtube.com/@thesurgebossedupshorts?si=yMg4y6_enQvBx0re" target="_blank">⚡ Shorts Channel</a>
-    <a class="button" href="https://www.tiktok.com/@fix4ii?is_from_webapp=1&sender_device=pc" target="_blank">📱 TikTok</a>
-    <a class="button" href="https://discord.gg/QjTa6dXKcy" target="_blank">💬 Join Our Discord</a>
-    <a class="button" href="https://twitch.tv/fixx411" target="_blank">🎥 Twitch: fixx411</a>
+    <a class="button" href="https://youtube.com/@thesurgebossupsimulations?si=b2utwXfHlMEazqVY" target="_blank">
+      <img src="assets/youtube.png" alt="YouTube"/>YouTube: Bossed Up Simulations
+    </a>
+    <a class="button" href="https://youtube.com/@thesurgebossedupshorts?si=yMg4y6_enQvBx0re" target="_blank">
+      <img src="assets/youtube_shorts.png" alt="YouTube Shorts"/>Shorts Channel
+    </a>
+    <a class="button" href="https://www.tiktok.com/@fix4ii?is_from_webapp=1&sender_device=pc" target="_blank">
+      <img src="assets/tiktok.png" alt="TikTok"/>TikTok
+    </a>
+    <a class="button" href="https://discord.gg/QjTa6dXKcy" target="_blank">
+      <img src="assets/discord.png" alt="Discord"/>Join Our Discord
+    </a>
+    <a class="button" href="https://twitch.tv/fixx411" target="_blank">
+      <img src="assets/twitch.png" alt="Twitch"/>Twitch: fixx411
+    </a>
   </div>
 
   <div class="section">
