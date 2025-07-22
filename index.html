@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -57,16 +58,21 @@
       object-fit: contain;
       display: block;
     }
+    .qr-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+    .qr-row img {
+      width: 100px;
+      height: 100px;
+      border-radius: 10px;
+      border: 2px solid white;
+    }
     .section {
       margin: 3rem 1rem;
-    }
-    .wallet {
-      word-break: break-all;
-      font-family: monospace;
-      background-color: rgba(0,0,0,0.2);
-      padding: 0.3rem;
-      border-radius: 5px;
-      margin-top: 0.5rem;
     }
     footer {
       padding: 2rem 1rem;
@@ -75,48 +81,6 @@
   </style>
 </head>
 <body>
-
-<div style="position: absolute; top: 350px; left: 20px; width: 260px;">
-  <div style="display: flex; flex-wrap: wrap; gap: 20px;">
-    <div style="flex: 1 1 45%; text-align: center;">
-      <a href="https://freebitco.in/?r=11501929" target="_blank" title="Collect every hour">
-        <img src="images/freebitcoin.png" alt="FreeBitcoin" style="width: 100px; border-radius: 16px;">
-      </a>
-      <br><button>Join & Earn</button>
-    </div>
-    <div style="flex: 1 1 45%; text-align: center;">
-      <a href="https://freebitcoin.pro/ref/Fix411" target="_blank" title="Collect every 30 minutes">
-        <img src="images/freebitcoin_pro.png" alt="FreeBitcoin.pro" style="width: 100px; border-radius: 16px;">
-      </a>
-      <br><button>Join & Earn</button>
-    </div>
-    <div style="flex: 1 1 45%; text-align: center;">
-      <a href="https://faucetpayz.com/ref/Fix411" target="_blank" title="Collect every 4 minutes">
-        <img src="images/faucetpayz.png" alt="FaucetPayz" style="width: 100px; border-radius: 16px;">
-      </a>
-      <br><button>Join & Earn</button>
-    </div>
-    <div style="flex: 1 1 45%; text-align: center;">
-      <a href="https://btcadspace.com/ref/Fix411" target="_blank" title="Collect until faucet runs out">
-        <img src="images/btcadspace.png" alt="BTC Ad Space" style="width: 100px; border-radius: 16px;">
-      </a>
-      <br><button>Join & Earn</button>
-    </div>
-    <div style="flex: 1 1 45%; text-align: center;">
-      <a href="https://firefaucet.win/ref/Fix411" target="_blank" title="Collect in many different ways">
-        <img src="images/firefaucet.png" alt="FireFaucet" style="width: 100px; border-radius: 16px;">
-      </a>
-      <br><button>Join & Earn</button>
-    </div>
-    <div style="flex: 1 1 45%; text-align: center;">
-      <a href="https://faucetcrypto.com/r/9002000" target="_blank" title="Collect in many different ways">
-        <img src="images/faucetcrypto.png" alt="FaucetCrypto" style="width: 100px; border-radius: 16px;">
-      </a>
-      <br><button>Join & Earn</button>
-    </div>
-  </div>
-</div>
-
 
   <header>
     <img src="assets/logo.jpg" alt="Bossed Up Logo" class="logo"/>
@@ -141,76 +105,32 @@
       <img src="assets/twitch.png" alt="Twitch"/>
     </a>
   </div>
-  
-  <div style="margin-top: 2rem;">
-  <h2>💳 Crypto Wallet QR Codes</h2>
-  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
-    <div style="text-align: center;">
-      <img src="https://api.qrserver.com/v1/create-qr-code/?size=130x130&data=3CG69wGvzammfDvbiQFoFF3BN6vvYvkqrm" alt="BTC Wallet QR" />
-      <div>BTC Wallet</div>
-    </div>
-    <div style="text-align: center;">
-      <img src="https://api.qrserver.com/v1/create-qr-code/?size=130x130&data=0xc9B496530289340555f779BfcfEaFD9D7d0F4da4" alt="ETH Wallet QR" />
-      <div>ETH Wallet</div>
-    </div>
-    <div style="text-align: center;">
-      <img src="https://api.qrserver.com/v1/create-qr-code/?size=130x130&data=bCWinWdN6A2zBbKu1iqogbwG7a9BQTv8rya8KGETDQU" alt="SOL Wallet QR" />
-      <div>SOL Wallet</div>
-    </div>
-    <div style="text-align: center;">
-      <img src="https://api.qrserver.com/v1/create-qr-code/?size=130x130&data=0x5D7B0F6Ce7e25dE8932a698E02842aCe8d02ce0D" alt="BAT Wallet QR" />
-      <div>BAT Wallet</div>
-    </div>
-    <div style="text-align: center;">
-      <img src="https://api.qrserver.com/v1/create-qr-code/?size=130x130&data=15VfjQ2RAgBdtwTpW7QBRvoLEApcLRfJBm" alt="Free Wallet QR" />
-      <div>Free Wallet</div>
-    </div>
-  </div>
-</div>
-
-
 
   <div class="section">
     <h2>💸 Brave Tips & Crypto Support</h2>
     <p>Verified Brave Creator</p>
-    <div>
-      <strong>BTC Wallet:</strong>
-      <div class="wallet">0x8e281d590229ef6f2b1264e9d3c543595c18b47c</div>
+    <h3>💳 Crypto Wallet QR Codes</h3>
+
+    <div class="qr-row">
+      <img src="assets/sol_qr.png" alt="SOL Wallet" title="Scan to tip crypto">
+      <img src="assets/bat_qr.png" alt="BAT Wallet" title="Scan to tip crypto">
+      <img src="assets/btc_qr.png" alt="BTC Wallet" title="Scan to tip crypto">
+      <img src="assets/eth_qr.png" alt="ETH Wallet" title="Scan to tip crypto">
+      <img src="assets/free_qr.png" alt="Free Wallet" title="Scan to tip crypto">
     </div>
-    <div>
-      <strong>ETH Wallet:</strong>
-      <div class="wallet">0x8e281d590229ef6f2b1264e9d3c543595c18b47c</div>
-    </div>
-    <div>
-      <strong>SOL Wallet:</strong>
-      <div class="wallet">0x8e281d590229ef6f2b1264e9d3c543595c18b47c</div>
-    </div>
-    <div>
-      <strong>BAT Wallet:</strong>
-      <div class="wallet">0x8e281d590229ef6f2b1264e9d3c543595c18b47c</div>
-    </div>
+
+    <div style="margin-top: 2rem;"></div>
   </div>
 
-  
   <div class="section">
     <h2>📩 Join Our Email List</h2>
     <p>Get updates, schedules, and behind-the-scenes</p>
-    <div id="mc_embed_signup">
-      <form action="https://thesurge.us17.list-manage.com/subscribe/post?u=e931729b8c78f77fb0a04410c&amp;id=e66a1388e3&amp;f_id=00d9c3e1f0" method="post" target="_blank" novalidate>
-        <input type="email" name="EMAIL" placeholder="Email address" required style="padding:0.5rem;width:70%;max-width:300px;border:none;border-radius:5px;margin:5px 0;">
-        <input type="text" name="FNAME" placeholder="First name" style="padding:0.5rem;width:70%;max-width:300px;border:none;border-radius:5px;margin:5px 0;">
-        <input type="text" name="LNAME" placeholder="Last name" style="padding:0.5rem;width:70%;max-width:300px;border:none;border-radius:5px;margin:5px 0;">
-        <br>
-        <button type="submit" style="padding:0.5rem 1rem;border:none;border-radius:5px;background:white;color:#000;font-weight:bold;">Subscribe</button>
-      </form>
-    </div>
-  </div>
-
-    <p>Get updates, schedules, and behind-the-scenes</p>
-    <form action="https://your-mailchimp-form-url" method="POST" target="_blank">
-      <input type="email" name="EMAIL" placeholder="Enter your email" required style="padding:0.5rem;width:70%;max-width:300px;border:none;border-radius:5px;">
-      <br/><br/>
-      <button type="submit" style="padding:0.5rem 1rem;border:none;border-radius:5px;background:white;color:#000;font-weight:bold;">Sign Up</button>
+    <form action="https://thesurge.us17.list-manage.com/subscribe/post?u=e931729b8c78f77fb0a04410c&amp;id=e66a1388e3&amp;f_id=00d9c3e1f0" method="post" target="_blank" novalidate>
+      <input type="email" name="EMAIL" placeholder="Email address" required style="padding:0.5rem;width:70%;max-width:300px;border:none;border-radius:5px;margin:5px 0;">
+      <input type="text" name="FNAME" placeholder="First name" style="padding:0.5rem;width:70%;max-width:300px;border:none;border-radius:5px;margin:5px 0;">
+      <input type="text" name="LNAME" placeholder="Last name" style="padding:0.5rem;width:70%;max-width:300px;border:none;border-radius:5px;margin:5px 0;">
+      <br>
+      <button type="submit" style="padding:0.5rem 1rem;border:none;border-radius:5px;background:white;color:#000;font-weight:bold;">Subscribe</button>
     </form>
   </div>
 
